@@ -220,12 +220,12 @@ WHERE
 -- Using Temp Table to perform Calculation on Partition By in previous query
 DROP TABLE IF EXISTS PercentPopulationVaccinated;
 CREATE TABLE PercentPopulationVaccinated ( continent VARCHAR(255), 
-										  location VARCHAR(255),
-										  date TIMESTAMP,
-										  population 
-										  NUMERIC, 
-										  new_vaccinations NUMERIC, 
-										  RollingPeopleVaccinated NUMERIC );
+					   location VARCHAR(255),
+					   date TIMESTAMP,
+					   population 
+					   NUMERIC, 
+					   new_vaccinations NUMERIC, 
+					   RollingPeopleVaccinated NUMERIC );
 
 INSERT INTO
   PercentPopulationVaccinated 
